@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: webhook
+  name: webhook
+  namespace: xxxx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webhook
+  template:
+    metadata:
+      labels:
+        app: webhook
+    spec:
+      containers:
+        - image: xxxxx
+          imagePullPolicy: Always
+          name: webhook
+          env:
+            - name: token
+              value: xxxxx
+      restartPolicy: Always
