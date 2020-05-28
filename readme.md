@@ -7,6 +7,8 @@
 
 4.叮叮发送格式https://ding-doc.dingtalk.com/doc#/serverapi3/iydd5h
 
+5.叮叮需要选择关键字模式 关键字为"当前状态"
+
 二 项目部署
 
 git clone  https://github.com/strive-after/go-alertmanager.git
